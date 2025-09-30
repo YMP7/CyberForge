@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ufdr_report>
+  <chats>
+    <chat>
+      <sender>Alice</sender>
+      <receiver>Bob</receiver>
+      <timestamp>2025-09-22T09:30:00</timestamp>
+      <message>Hello Bob, did you get the Bitcoin address?</message>
+    </chat>
+    <chat>
+      <sender>Bob</sender>
+      <receiver>Alice</receiver>
+      <timestamp>2025-09-22T09:32:00</timestamp>
+      <message>Yes, here it is: bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh</message>
+    </chat>
+  </chats>
+  <calls>
+    <call>
+      <caller>Alice</caller>
+      <callee>+49123456789</callee>
+      <timestamp>2025-09-21T15:00:00</timestamp>
+      <duration>320</duration>
+    </call>
+  </calls>
+  <media>
+    <media>
+      <name>evidence1.jpg</name>
+      <path>/devices/device123/photos/evidence1.jpg</path>
+      <hash>abc123def456</hash>
+      <timestamp>2025-09-20T11:45:00</timestamp>
+    </media>
+  </media>
+</ufdr_report>

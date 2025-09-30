@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileForensics>
+    <DeviceInformation>
+        <DeviceID>1234567890ABCDEF</DeviceID>
+        <DeviceType>Smartphone</DeviceType>
+        <Manufacturer>Apple</Manufacturer>
+        <Model>iPhone 13</Model>
+        <OperatingSystem>iOS 15.5</OperatingSystem>
+        <IMEI>987654321098765</IMEI>
+        <SIMCardID>ABC123456789</SIMCardID>
+        <PhoneNumber>+11234567890</PhoneNumber>
+        <DeviceOwner>John Doe</DeviceOwner>
+        <LastKnownLocation>
+            <Latitude>34.052235</Latitude>
+            <Longitude>-118.243683</Longitude>
+            <Timestamp>2025-09-22T14:30:00Z</Timestamp>
+        </LastKnownLocation>
+    </DeviceInformation>
+
+    <AppUsage>
+        <App>
+            <AppID>com.apple.maps</AppID>
+            <AppName>Apple Maps</AppName>
+            <Version>5.1.0</Version>
+            <UsageStartTime>2025-09-22T13:55:00Z</UsageStartTime>
+            <UsageEndTime>2025-09-22T14:05:00Z</UsageEndTime>
+            <Duration>600</Duration> <!-- Duration in seconds -->
+            <Activity>Navigation</Activity>
+        </App>
+        <App>
+            <AppID>com.whatsapp</AppID>
+            <AppName>WhatsApp</AppName>
+            <Version>2.21.11.17</Version>
+            <UsageStartTime>2025-09-22T14:10:00Z</UsageStartTime>
+            <UsageEndTime>2025-09-22T14:15:00Z</UsageEndTime>
+            <Duration>300</Duration> <!-- Duration in seconds -->
+            <Activity>Message Sent</Activity>
+        </App>
+    </AppUsage>
+
+    <SensorData>
+        <Sensor>
+            <SensorID>1</SensorID>
+            <SensorType>GPS</SensorType>
+            <SensorValue>
+                <Latitude>34.052235</Latitude>
+                <Longitude>-118.243683</Longitude>
+                <Altitude>100</Altitude>
+            </SensorValue>
+            <Timestamp>2025-09-22T14:30:00Z</Timestamp>
+        </Sensor>
+        <Sensor>
+            <SensorID>2</SensorID>
+            <SensorType>Accelerometer</SensorType>
+            <SensorValue>
+                <X>0.5</X>
+                <Y>-0.2</Y>
+                <Z>9.8</Z> <!-- Acceleration in m/s² -->
+            </SensorValue>
+            <Timestamp>2025-09-22T14:30:00Z</Timestamp>
+        </Sensor>
+        <Sensor>
+            <SensorID>3</SensorID>
+            <SensorType>Battery</SensorType>
+            <SensorValue>85</SensorValue> <!-- Battery percentage -->
+            <Timestamp>2025-09-22T14:30:00Z</Timestamp>
+        </Sensor>
+    </SensorData>
+
+    <NetworkEvents>
+        <NetworkEvent>
+            <EventID>1</EventID>
+            <EventType>WiFi Connection</EventType>
+            <NetworkName>MyHomeNetwork</NetworkName>
+            <SignalStrength>-70</SignalStrength> <!-- dBm -->
+            <ConnectionStartTime>2025-09-22T14:30:00Z</ConnectionStartTime>
+            <ConnectionEndTime>2025-09-22T14:35:00Z</ConnectionEndTime>
+        </NetworkEvent>
+        <NetworkEvent>
+            <EventID>2</EventID>
+            <EventType>Cellular Data</EventType>
+            <NetworkOperator>AT&T</NetworkOperator>
+            <SignalStrength>-85</SignalStrength> <!-- dBm -->
+            <ConnectionStartTime>2025-09-22T14:35:00Z</ConnectionStartTime>
+            <ConnectionEndTime>2025-09-22T14:40:00Z</ConnectionEndTime>
+        </NetworkEvent>
+    </NetworkEvents>
+
+    <CallLog>
+        <Call>
+            <CallID>1</CallID>
+            <CallType>Outgoing</CallType>
+            <PhoneNumber>+11234567890</PhoneNumber>
+            <CallStartTime>2025-09-22T14:20:00Z</CallStartTime>
+            <CallEndTime>2025-09-22T14:25:00Z</CallEndTime>
+            <CallDuration>300</CallDuration> <!-- Duration in seconds -->
+            <CallStatus>Completed</CallStatus>
+        </Call>
+        <Call>
+            <CallID>2</CallID>
+            <CallType>Incoming</CallType>
+            <PhoneNumber>+10987654321</PhoneNumber>
+            <CallStartTime>2025-09-22T14:50:00Z</CallStartTime>
+            <CallEndTime>2025-09-22T14:55:00Z</CallEndTime>
+            <CallDuration>300</CallDuration> <!-- Duration in seconds -->
+            <CallStatus>Missed</CallStatus>
+        </Call>
+    </CallLog>
+
+    <TextMessages>
+        <Message>
+            <MessageID>1</MessageID>
+            <Sender>+11234567890</Sender>
+            <Receiver>+10987654321</Receiver>
+            <MessageBody>Hello, How are you?</MessageBody>
+            <SentTime>2025-09-22T14:15:00Z</SentTime>
+            <Status>Sent</Status>
+        </Message>
+        <Message>
+            <MessageID>2</MessageID>
+            <Sender>+10987654321</Sender>
+            <Receiver>+11234567890</Receiver>
+            <MessageBody>I'm good, thanks!</MessageBody>
+            <SentTime>2025-09-22T14:16:00Z</SentTime>
+            <Status>Received</Status>
+        </Message>
+    </TextMessages>
+
+</MobileForensics>

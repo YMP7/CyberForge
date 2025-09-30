@@ -1,0 +1,14 @@
+### `requirements.txt`
+```text
+fastapi
+uvicorn
+pydantic
+pandas
+elasticsearch
+pymongo
+faiss-cpu
+transformers
+sentence-transformers
+spacy
+networkx
+reportlab
